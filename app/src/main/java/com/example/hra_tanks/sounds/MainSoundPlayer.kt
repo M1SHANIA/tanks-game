@@ -1,8 +1,8 @@
-package ru.appngo.tankstutorial.sounds
+package com.example.hra_tanks.sounds
 
 import android.content.Context
 import com.example.hra_tanks.R
-import ru.appngo.tankstutorial.ProgressIndicator
+import com.example.hra_tanks.ProgressIndicator
 
 
 private const val INTRO_MUSIC_INDEX = 0

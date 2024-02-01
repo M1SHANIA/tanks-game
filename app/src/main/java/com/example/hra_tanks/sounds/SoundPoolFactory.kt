@@ -1,4 +1,4 @@
-package ru.appngo.tankstutorial.sounds
+package com.example.hra_tanks.sounds
 
 import android.media.AudioManager
 import android.media.SoundPool

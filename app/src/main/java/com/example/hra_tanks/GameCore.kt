@@ -1,13 +1,12 @@
-package ru.appngo.tankstutorial
+package com.example.hra_tanks
 
 import android.app.Activity
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.TextView
-import com.example.hra_tanks.R
-import ru.appngo.tankstutorial.activities.SCORE_REQUEST_CODE
-import ru.appngo.tankstutorial.activities.ScoreActivity
+import com.example.hra_tanks.activities.SCORE_REQUEST_CODE
+import com.example.hra_tanks.activities.ScoreActivity
 
 class GameCore(private val activity: Activity) {
     @Volatile

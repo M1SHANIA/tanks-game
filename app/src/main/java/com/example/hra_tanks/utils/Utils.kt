@@ -1,15 +1,15 @@
-package ru.appngo.tankstutorial.utils
+package com.example.hra_tanks.utils
 
 import android.app.Activity
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
-import ru.appngo.tankstutorial.activities.CELL_SIZE
-import ru.appngo.tankstutorial.activities.HORIZONTAL_MAX_SIZE
-import ru.appngo.tankstutorial.activities.VERTICAL_MAX_SIZE
-import ru.appngo.tankstutorial.models.Coordinate
-import ru.appngo.tankstutorial.models.Element
-import ru.appngo.tankstutorial.models.Tank
+import com.example.hra_tanks.activities.CELL_SIZE
+import com.example.hra_tanks.activities.HORIZONTAL_MAX_SIZE
+import com.example.hra_tanks.activities.VERTICAL_MAX_SIZE
+import com.example.hra_tanks.models.Coordinate
+import com.example.hra_tanks.models.Element
+import com.example.hra_tanks.models.Tank
 import kotlin.random.Random
 
 const val TOTAL_PERCENT = 100

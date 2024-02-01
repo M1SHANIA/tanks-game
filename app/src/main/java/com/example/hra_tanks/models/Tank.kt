@@ -1,17 +1,17 @@
-package ru.appngo.tankstutorial.models
+package com.example.hra_tanks.models
 
 import android.view.View
 import android.widget.FrameLayout
-import ru.appngo.tankstutorial.activities.CELL_SIZE
-import ru.appngo.tankstutorial.drawers.EnemyDrawer
-import ru.appngo.tankstutorial.enums.Direction
-import ru.appngo.tankstutorial.enums.Material.ENEMY_TANK
-import ru.appngo.tankstutorial.utils.checkIfChanceBiggerThanRandom
-import ru.appngo.tankstutorial.utils.checkViewCanMoveThroughBorder
-import ru.appngo.tankstutorial.utils.getElementByCoordinates
-import ru.appngo.tankstutorial.utils.getTankByCoordinates
-import ru.appngo.tankstutorial.utils.getViewCoordinate
-import ru.appngo.tankstutorial.utils.runOnUiThread
+import com.example.hra_tanks.activities.CELL_SIZE
+import com.example.hra_tanks.drawers.EnemyDrawer
+import com.example.hra_tanks.enums.Direction
+import com.example.hra_tanks.enums.Material.ENEMY_TANK
+import com.example.hra_tanks.utils.checkIfChanceBiggerThanRandom
+import com.example.hra_tanks.utils.checkViewCanMoveThroughBorder
+import com.example.hra_tanks.utils.getElementByCoordinates
+import com.example.hra_tanks.utils.getTankByCoordinates
+import com.example.hra_tanks.utils.getViewCoordinate
+import com.example.hra_tanks.utils.runOnUiThread
 import kotlin.random.Random
 
 class Tank constructor(

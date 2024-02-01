@@ -1,7 +1,7 @@
-package ru.appngo.tankstutorial.models
+package com.example.hra_tanks.models
 
 import android.view.View
-import ru.appngo.tankstutorial.enums.Direction
+import com.example.hra_tanks.enums.Direction
 
 data class Bullet(
     val view: View,

@@ -1,4 +1,4 @@
-package ru.appngo.tankstutorial.enums
+package com.example.hra_tanks.enums
 
 import com.example.hra_tanks.R
 

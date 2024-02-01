@@ -1,11 +1,11 @@
-package ru.appngo.tankstutorial
+package com.example.hra_tanks
 
 import android.app.Activity
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken
 import com.google.gson.Gson
-import ru.appngo.tankstutorial.models.Element
+import com.example.hra_tanks.models.Element
 
 const val KEY_LEVEL = "key_level"
 

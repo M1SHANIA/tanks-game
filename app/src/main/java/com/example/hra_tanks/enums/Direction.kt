@@ -1,4 +1,4 @@
-package ru.appngo.tankstutorial.enums
+package com.example.hra_tanks.enums
 
 enum class Direction(val rotation: Float) {
     UP(0f),

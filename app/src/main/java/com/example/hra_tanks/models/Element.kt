@@ -1,7 +1,7 @@
-package ru.appngo.tankstutorial.models
+package com.example.hra_tanks.models
 
 import android.view.View
-import ru.appngo.tankstutorial.enums.Material
+import com.example.hra_tanks.enums.Material
 
 data class Element constructor(
         val viewId: Int = View.generateViewId(),

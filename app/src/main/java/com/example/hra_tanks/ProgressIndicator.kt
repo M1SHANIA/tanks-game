@@ -1,4 +1,4 @@
-package ru.appngo.tankstutorial
+package com.example.hra_tanks
 
 interface ProgressIndicator {
     fun showProgress()

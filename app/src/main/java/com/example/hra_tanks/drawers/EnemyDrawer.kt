@@ -1,18 +1,18 @@
-package ru.appngo.tankstutorial.drawers
+package com.example.hra_tanks.drawers
 
 import android.widget.FrameLayout
-import ru.appngo.tankstutorial.GameCore
-import ru.appngo.tankstutorial.activities.CELL_SIZE
-import ru.appngo.tankstutorial.activities.HALF_WIDTH_OF_CONTAINER
-import ru.appngo.tankstutorial.activities.VERTICAL_MAX_SIZE
-import ru.appngo.tankstutorial.enums.Direction.BOTTOM
-import ru.appngo.tankstutorial.enums.Material.ENEMY_TANK
-import ru.appngo.tankstutorial.models.Coordinate
-import ru.appngo.tankstutorial.models.Element
-import ru.appngo.tankstutorial.models.Tank
-import ru.appngo.tankstutorial.sounds.MainSoundPlayer
-import ru.appngo.tankstutorial.utils.checkIfChanceBiggerThanRandom
-import ru.appngo.tankstutorial.utils.drawElement
+import com.example.hra_tanks.GameCore
+import com.example.hra_tanks.activities.CELL_SIZE
+import com.example.hra_tanks.activities.HALF_WIDTH_OF_CONTAINER
+import com.example.hra_tanks.activities.VERTICAL_MAX_SIZE
+import com.example.hra_tanks.enums.Direction.BOTTOM
+import com.example.hra_tanks.enums.Material.ENEMY_TANK
+import com.example.hra_tanks.models.Coordinate
+import com.example.hra_tanks.models.Element
+import com.example.hra_tanks.models.Tank
+import com.example.hra_tanks.sounds.MainSoundPlayer
+import com.example.hra_tanks.utils.checkIfChanceBiggerThanRandom
+import com.example.hra_tanks.utils.drawElement
 
 private const val MAX_ENEMY_AMOUNT = 20
 

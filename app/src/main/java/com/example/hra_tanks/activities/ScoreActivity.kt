@@ -1,4 +1,4 @@
-package ru.appngo.tankstutorial.activities
+package com.example.hra_tanks.activities
 
 import android.app.Activity
 import android.content.Context
@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hra_tanks.R
 
-import ru.appngo.tankstutorial.sounds.ScoreSoundPlayer
+import com.example.hra_tanks.sounds.ScoreSoundPlayer
 
 const val SCORE_REQUEST_CODE = 100
 

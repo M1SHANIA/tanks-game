@@ -5,12 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/total_container"
-    android:background="@android:color/black">
+    android:background="@color/black">
+
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/colorPrimaryDark"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:id="@+id/materials_container"
@@ -19,7 +35,7 @@
         android:layout_gravity="end"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="108dp"
         android:orientation="vertical"
         android:visibility="gone"
         tools:visibility="visible">
@@ -51,6 +67,13 @@
             android:layout_height="50dp"
             android:layout_margin="8dp"
             android:src="@drawable/grass"/>
+
+        <ImageView
+            android:id="@+id/editor_eagle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/eagle"/>
 
     </LinearLayout>
 

@@ -1,24 +1,24 @@
-package ru.appngo.tankstutorial.drawers
+package com.example.hra_tanks.drawers
 
 import android.app.Activity
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import com.example.hra_tanks.R
-import ru.appngo.tankstutorial.GameCore
-import ru.appngo.tankstutorial.activities.CELL_SIZE
-import ru.appngo.tankstutorial.enums.Direction
-import ru.appngo.tankstutorial.enums.Material
-import ru.appngo.tankstutorial.models.Bullet
-import ru.appngo.tankstutorial.models.Coordinate
-import ru.appngo.tankstutorial.models.Element
-import ru.appngo.tankstutorial.models.Tank
-import ru.appngo.tankstutorial.sounds.MainSoundPlayer
-import ru.appngo.tankstutorial.utils.checkViewCanMoveThroughBorder
-import ru.appngo.tankstutorial.utils.getElementByCoordinates
-import ru.appngo.tankstutorial.utils.getTankByCoordinates
-import ru.appngo.tankstutorial.utils.getViewCoordinate
-import ru.appngo.tankstutorial.utils.runOnUiThread
+import com.example.hra_tanks.GameCore
+import com.example.hra_tanks.activities.CELL_SIZE
+import com.example.hra_tanks.enums.Direction
+import com.example.hra_tanks.enums.Material
+import com.example.hra_tanks.models.Bullet
+import com.example.hra_tanks.models.Coordinate
+import com.example.hra_tanks.models.Element
+import com.example.hra_tanks.models.Tank
+import com.example.hra_tanks.sounds.MainSoundPlayer
+import com.example.hra_tanks.utils.checkViewCanMoveThroughBorder
+import com.example.hra_tanks.utils.getElementByCoordinates
+import com.example.hra_tanks.utils.getTankByCoordinates
+import com.example.hra_tanks.utils.getViewCoordinate
+import com.example.hra_tanks.utils.runOnUiThread
 
 private const val BULLET_WIDTH = 15
 private const val BULLET_HEIGHT = 25

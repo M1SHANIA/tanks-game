@@ -1,13 +1,13 @@
-package ru.appngo.tankstutorial.drawers
+package com.example.hra_tanks.drawers
 
 import android.view.View
 import android.widget.FrameLayout
-import ru.appngo.tankstutorial.activities.CELL_SIZE
-import ru.appngo.tankstutorial.enums.Material
-import ru.appngo.tankstutorial.models.Coordinate
-import ru.appngo.tankstutorial.models.Element
-import ru.appngo.tankstutorial.utils.drawElement
-import ru.appngo.tankstutorial.utils.getElementByCoordinates
+import com.example.hra_tanks.activities.CELL_SIZE
+import com.example.hra_tanks.enums.Material
+import com.example.hra_tanks.models.Coordinate
+import com.example.hra_tanks.models.Element
+import com.example.hra_tanks.utils.drawElement
+import com.example.hra_tanks.utils.getElementByCoordinates
 
 class ElementsDrawer(val container: FrameLayout) {
 

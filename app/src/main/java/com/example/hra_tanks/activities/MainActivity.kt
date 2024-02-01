@@ -1,5 +1,6 @@
-package ru.appngo.tankstutorial.activities
+package com.example.hra_tanks.activities
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
@@ -19,37 +20,40 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.hra_tanks.R
-import ru.appngo.tankstutorial.GameCore
-import ru.appngo.tankstutorial.LevelStorage
-import ru.appngo.tankstutorial.ProgressIndicator
-import ru.appngo.tankstutorial.drawers.BulletDrawer
-import ru.appngo.tankstutorial.drawers.ElementsDrawer
-import ru.appngo.tankstutorial.drawers.EnemyDrawer
-import ru.appngo.tankstutorial.drawers.GridDrawer
-import ru.appngo.tankstutorial.enums.Direction
-import ru.appngo.tankstutorial.enums.Direction.BOTTOM
-import ru.appngo.tankstutorial.enums.Direction.LEFT
-import ru.appngo.tankstutorial.enums.Direction.RIGHT
-import ru.appngo.tankstutorial.enums.Direction.UP
-import ru.appngo.tankstutorial.enums.Material.BRICK
-import ru.appngo.tankstutorial.enums.Material.CONCRETE
-import ru.appngo.tankstutorial.enums.Material.EAGLE
-import ru.appngo.tankstutorial.enums.Material.EMPTY
-import ru.appngo.tankstutorial.enums.Material.GRASS
-import ru.appngo.tankstutorial.enums.Material.PLAYER_TANK
-import ru.appngo.tankstutorial.models.Coordinate
-import ru.appngo.tankstutorial.models.Element
-import ru.appngo.tankstutorial.models.Tank
-import ru.appngo.tankstutorial.sounds.MainSoundPlayer
+import com.example.hra_tanks.GameCore
+import com.example.hra_tanks.LevelStorage
+import com.example.hra_tanks.ProgressIndicator
+import com.example.hra_tanks.drawers.BulletDrawer
+import com.example.hra_tanks.drawers.ElementsDrawer
+import com.example.hra_tanks.drawers.EnemyDrawer
+import com.example.hra_tanks.drawers.GridDrawer
+import com.example.hra_tanks.enums.Direction
+import com.example.hra_tanks.enums.Direction.BOTTOM
+import com.example.hra_tanks.enums.Direction.LEFT
+import com.example.hra_tanks.enums.Direction.RIGHT
+import com.example.hra_tanks.enums.Direction.UP
+import com.example.hra_tanks.enums.Material.BRICK
+import com.example.hra_tanks.enums.Material.CONCRETE
+import com.example.hra_tanks.enums.Material.EAGLE
+import com.example.hra_tanks.enums.Material.EMPTY
+import com.example.hra_tanks.enums.Material.GRASS
+import com.example.hra_tanks.enums.Material.PLAYER_TANK
+import com.example.hra_tanks.models.Coordinate
+import com.example.hra_tanks.models.Element
+import com.example.hra_tanks.models.Tank
+import com.example.hra_tanks.sounds.MainSoundPlayer
 
 const val CELL_SIZE = 50
-const val VERTICAL_CELL_AMOUNT = 38
-const val HORIZONTAL_CELL_AMOUNT = 25
+const val VERTICAL_CELL_AMOUNT = 50
+const val HORIZONTAL_CELL_AMOUNT = 29
 const val VERTICAL_MAX_SIZE = CELL_SIZE * VERTICAL_CELL_AMOUNT
 const val HORIZONTAL_MAX_SIZE = CELL_SIZE * HORIZONTAL_CELL_AMOUNT
 const val HALF_WIDTH_OF_CONTAINER = VERTICAL_MAX_SIZE / 2
 
 class MainActivity : AppCompatActivity(), ProgressIndicator {
+
+    private lateinit var la: androidx.appcompat.widget.Toolbar
+
     private var editMode = false
     private lateinit var item: MenuItem
     private lateinit var container: FrameLayout
@@ -125,9 +129,14 @@ class MainActivity : AppCompatActivity(), ProgressIndicator {
         )
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        la = findViewById(R.id.toolbar)
+        setSupportActionBar(la)
 
         container = findViewById(R.id.container)
         editorClear = findViewById(R.id.editor_clear)
@@ -136,6 +145,7 @@ class MainActivity : AppCompatActivity(), ProgressIndicator {
         editorGrass = findViewById(R.id.editor_grass)
         initTitle = findViewById(R.id.init_title)
         materialsContainer = findViewById(R.id.materials_container)
+        totalContainer = findViewById(R.id.total_container)
 
         enemyDrawer.bulletDrawer = bulletDrawer
         container.layoutParams = FrameLayout.LayoutParams(
